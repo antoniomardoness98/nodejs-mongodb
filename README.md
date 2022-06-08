@@ -2,8 +2,7 @@
 
 ## Autor: fazt
 ## link del curso: https://www.youtube.com/watch?v=I-MhmB5B6Zk&t=124s
-## Link de mi aplicación desplegada en heroku: https://dashboard.heroku.com/apps/tasks-app-crud-ams/deploy/github
-
+## Link de mi aplicación desplegada en heroku: (https://tasks-app-crud-ams.herokuapp.com/)
 ## Caracteristicas de la app
 - Permite conocer las tecnologias de node js, mongodb, express, mongoose, babel.
 - Se realiza una conexión con variables de entorno
