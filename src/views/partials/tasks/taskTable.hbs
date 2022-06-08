@@ -1,0 +1,42 @@
+{{#if tasks}}
+  <table class="table table-borderer table-hover table-dark">
+    <thead>
+      <tr>
+        <th>N</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Operations</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each tasks}}
+        <tr>
+          <td>{{@index}}</td>
+          <td>{{title}}</td>
+          <td>{{description}}</td>
+          <td>
+            {{#if done}}
+              <a
+                href="/tasks/{{_id}}/toogleDone"
+                class="btn btn-dark"
+              >Undone</a>
+            {{else}}
+              <a
+                href="/tasks/{{_id}}/toogleDone"
+                class="btn btn-success"
+              >Done</a>
+            {{/if}}
+            <a href="/tasks/{{_id}}/delete" class="btn btn-danger">Delete</a>
+            <a href="/tasks/{{_id}}/edit" class="btn btn-info">Update</a>
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+{{else}}
+  <div class="text-center">
+    <h1>No task</h1>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAB10lEQVRoge2aQU7CQBSGP4wBz+ANXOABDF5Bb+BJXLgD3HgHV8adkejGxJu4EghiXMlWXDBNC5Ta9+ZNaWT+5IV0YP7//XnTmekUiFjCGTAE5sIYur61gcZEEu+hk2sCfWAkSEoKSeV6LicxegKh0EaS6GqMJMPlRJCQFGX7dUgrE0xE+tsgGvtC0VAo4m6UIdgzSmTr0Bhp5MTIfaeZHIYbOM2wOiaLxug5i/VAs4ZsWhAl+oUwI1JCpL/T90gtEY3UDdGIB1rAFTAFPoEb1xYMIabfFjBgfT3J29XWdh3Jmvhm2cg0pL6lkayJKXAMXGY4JyH1rYjyTAC0SSvTD6hvQtQEHly/D1ITR8DYtT8DB4H0TYh8TFjomxD5mvDVNyGyMOGjb0K0aqLt2qUmtPomRGVMPFHOhEbfhMjahFTfjOie9Xui7a7nwCPy/VTlRg6BH2BGWglfExJ9M6IL1z5w1z7DSaNvRnTr2l9ZmJnhVwmpvhlR3jHQHcqTc4U+IDsy3YQ3FgdqL5kYG/Caway0VejHZ/a6IRqpG/6NEc30W+XMVRo7WRHTt0jWKKpI8jqtU0Uif+DUfX5pOndZ30NtO641RprOjM//TKxi4kxY7A0jIiT4BSsIv1imibflAAAAAElFTkSuQmCC" class="w-10">
+    <p>Prueba a añadir una tarea</p>
+  </div>
+{{/if}}
