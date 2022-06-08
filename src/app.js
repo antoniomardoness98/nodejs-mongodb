@@ -4,6 +4,7 @@ import { create } from "express-handlebars";
 import path from "path";
 import morgan from "morgan";
 
+
 const app = express();
 
 app.set("views", path.join(__dirname, "views"));
