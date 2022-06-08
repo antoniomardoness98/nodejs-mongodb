@@ -1,6 +1,7 @@
 # Curso de node js
 
-## Autor: fazt
+## Autor: Antonio Mardones San Martín
+## Instructor: Faztweb
 ## link del curso: https://www.youtube.com/watch?v=I-MhmB5B6Zk&t=124s
 ## Link de mi aplicación desplegada en heroku: (https://tasks-app-crud-ams.herokuapp.com/)
 ## Caracteristicas de la app
